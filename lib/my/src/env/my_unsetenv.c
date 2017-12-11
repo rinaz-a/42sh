@@ -1,13 +1,3 @@
-/*
-** my_unsetenv.c for my_unsetenv in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Jan  3 19:28:43 2016 Ronan Boiteau
-** Last update Tue Apr 12 23:20:09 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 
@@ -44,6 +34,6 @@ void		my_unsetenv(char ***env, char *to_unset)
       new_env[idx] = my_strdup(new_env[idx + 1]);
       idx += 1;
     }
-  new_env[idx] = '\0';
+  new_env[idx] = NULL;
   return ;
 }

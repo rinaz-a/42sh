@@ -1,13 +1,3 @@
-/*
-** nmatch.c for nmatch in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Oct 10 22:11:14 2015 Ronan Boiteau
-** Last update Tue Apr 12 23:19:13 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

@@ -1,13 +1,3 @@
-/*
-** main.c for minishell in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Thu Dec 24 14:30:39 2015 Ronan Boiteau
-** Last update Sat Jun  4 14:49:20 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 #include "mysh_builtins.h"

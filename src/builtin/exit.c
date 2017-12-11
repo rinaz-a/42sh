@@ -1,13 +1,3 @@
-/*
-** exit.c for minishell in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Jan  3 20:46:44 2016 Ronan Boiteau
-** Last update Thu Jun  2 14:15:43 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 #include "mysh_command.h"

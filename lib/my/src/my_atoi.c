@@ -1,13 +1,3 @@
-/*
-** my_atoi.c for my_atoi in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Fri Dec 18 02:12:36 2015 Ronan Boiteau
-** Last update Tue Apr 12 23:18:20 2016 Ronan Boiteau
-*/
-
 #include <limits.h>
 #include "my.h"
 

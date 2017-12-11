@@ -1,13 +1,3 @@
-/*
-** my_cmp.c for my_cmp in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Fri Jan 15 00:12:32 2016 Ronan Boiteau
-** Last update Tue Apr 12 23:18:22 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

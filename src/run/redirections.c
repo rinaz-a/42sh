@@ -1,13 +1,3 @@
-/*
-** redirections.c for 42sh in /home/boitea_r/c/PSU_2015_42sh
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Jun  5 22:24:37 2016 Ronan Boiteau
-** Last update Sun Jun  5 23:29:26 2016 Ronan Boiteau
-*/
-
 #include <fcntl.h>
 #include <stdlib.h>
 #include <sys/stat.h>

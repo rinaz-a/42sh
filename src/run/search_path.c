@@ -1,13 +1,3 @@
-/*
-** search_path.c for minishell in /home/boitea_r
-**
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-**
-** Started on  Sat Apr  9 14:59:17 2016 Ronan Boiteau
-** Last update Sun Jun  5 19:43:30 2016 selim rinaz
-*/
-
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>

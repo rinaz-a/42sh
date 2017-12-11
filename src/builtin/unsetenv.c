@@ -1,13 +1,3 @@
-/*
-** unsetenv.c for minishell in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Thu Jan 14 19:02:35 2016 Ronan Boiteau
-** Last update Sun Jun  5 22:33:02 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 #include "mysh_builtins.h"

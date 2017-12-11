@@ -1,13 +1,3 @@
-/*
-** cd.c for minishell in /home/boitea_r
-**
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-**
-** Started on  Sun Jan  3 20:40:03 2016 Ronan Boiteau
-** Last update Sun Jun  5 11:35:42 2016 antoinegalpin
-*/
-
 #include <linux/limits.h>
 #include <stdlib.h>
 #include <unistd.h>

@@ -1,13 +1,3 @@
-/*
-** printenv.c for minishell in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Thu Jan 14 20:21:51 2016 Ronan Boiteau
-** Last update Mon Apr 18 17:37:48 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 #include "mysh_builtins.h"

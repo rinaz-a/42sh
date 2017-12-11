@@ -1,13 +1,3 @@
-/*
-** my_printf.c for my_printf in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Nov 14 08:17:53 2015 Ronan Boiteau
-** Last update Tue Apr 12 23:22:12 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 #include "printf_flags.h"

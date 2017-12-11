@@ -1,13 +1,3 @@
-/*
-** my_getenv.c for my_getenv in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Jan  3 18:38:17 2016 Ronan Boiteau
-** Last update Thu Jun  2 15:23:49 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

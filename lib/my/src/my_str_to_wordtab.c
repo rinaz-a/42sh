@@ -1,13 +1,3 @@
-/*
-** my_str_to_wordtab.c for my_str_to_wordtab in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Thu Dec 24 18:26:48 2015 Ronan Boiteau
-** Last update Tue Apr 12 23:18:44 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 
@@ -79,6 +69,6 @@ char		**my_str_to_wordtab(char *clean_str)
       tab[idx_line] = _fill_column(clean_str, &idx_str);
       idx_line += 1;
     }
-  tab[idx_line] = '\0';
+  tab[idx_line] = NULL;
   return (tab);
 }

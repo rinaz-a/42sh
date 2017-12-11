@@ -1,13 +1,3 @@
-/*
-** logic.c for minishell in /home/boitea_r
-**
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-**
-** Started on  Thu Jan 21 23:32:38 2016 Ronan Boiteau
-** Last update Thu Jun  2 14:14:56 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include <signal.h>
 #include "my.h"

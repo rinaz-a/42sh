@@ -1,13 +1,3 @@
-/*
-** my_uitoa.c for my_uitoa in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Jan 31 17:50:05 2016 Ronan Boiteau
-** Last update Tue Apr 12 23:23:34 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

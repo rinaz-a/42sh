@@ -1,13 +1,3 @@
-/*
-** my_itoa.c for my_itoa in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Wed Jan 27 02:23:39 2016 Ronan Boiteau
-** Last update Tue Apr 12 23:18:34 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

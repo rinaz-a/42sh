@@ -1,13 +1,3 @@
-/*
-** my_strdup.c for my_strdup in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Wed Oct  7 08:50:44 2015 Ronan Boiteau
-** Last update Thu Jun  2 16:01:18 2016 selim rinaz
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

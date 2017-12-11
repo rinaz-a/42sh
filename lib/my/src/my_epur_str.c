@@ -1,13 +1,3 @@
-/*
-** my_epur_str.c for my_epur_str in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Thu Dec 24 18:28:21 2015 Ronan Boiteau
-** Last update Tue Apr 12 23:18:25 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

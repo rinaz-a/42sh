@@ -1,13 +1,3 @@
-/*
-** input.c for minishell in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Wed Jan 13 22:28:01 2016 Ronan Boiteau
-** Last update Mon Apr 18 17:35:48 2016 Ronan Boiteau
-*/
-
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>

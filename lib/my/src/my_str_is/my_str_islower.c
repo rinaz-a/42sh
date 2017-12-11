@@ -1,13 +1,3 @@
-/*
-** my_str_islower.c for my_str_islower in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Oct 18 18:05:52 2015 Ronan Boiteau
-** Last update Tue Apr 12 23:22:53 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

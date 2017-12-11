@@ -1,13 +1,3 @@
-/*
-** my_strstr.c for my_strstr in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Oct  6 11:28:02 2015 Ronan Boiteau
-** Last update Tue Apr 12 23:19:04 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include "my.h"
 

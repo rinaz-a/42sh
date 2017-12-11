@@ -1,13 +1,3 @@
-/*
-** pipe.c for minishell in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Apr  9 14:59:50 2016 Ronan Boiteau
-** Last update Sun Jun  5 23:08:45 2016 Ronan Boiteau
-*/
-
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>

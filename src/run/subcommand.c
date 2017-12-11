@@ -1,13 +1,3 @@
-/*
-** subcommand.c for 42sh in /home/boitea_r/c/PSU_2015_42sh
-**
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-**
-** Started on  Fri Jun  3 11:21:39 2016 Ronan Boiteau
-** Last update Sun Jun  5 11:31:27 2016 antoinegalpin
-*/
-
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
