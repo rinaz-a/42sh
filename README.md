@@ -24,14 +24,14 @@ Navigate to the root of the repository from your Terminal and run `make` to buil
    - Redirections
  - Can manage its own environment
  - Builtin commands:
-   - builtins
-   - cd / chdir
-   - echo
-   - env [-0] [--null] [-u]
-   - printenv
-   - pwd
-   - setenv
-   - unsetenv
+   - `builtins`
+   - `cd / chdir`
+   - `echo`
+   - `env [-0] [--null] [-u]`
+   - `printenv`
+   - `pwd`
+   - `setenv`
+   - `unsetenv`
  - Prompt based on last exit status
  - Support for non-interactive mode
  
