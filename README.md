@@ -2,9 +2,11 @@
 
 {EPITECH.} first year project.
 
-C Shell that can execute commands as well as interpreting pipes, redirections, separators...
+C shell that can execute commands as well as interpreting pipes, redirections, separators...
 
-Based on the [tcsh shell](https://en.wikipedia.org/wiki/Tcsh).
+This is an evolution of [Minishell1](https://github.com/ronanboiteau/Minishell1).
+
+This shell is based on [tcsh](https://en.wikipedia.org/wiki/Tcsh).
 
 ## Requirements
 
