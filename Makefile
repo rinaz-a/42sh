@@ -1,13 +1,3 @@
-##
-## Makefile for 42sh in /home/boitea_r/c/PSU_2015_minishell2
-## 
-## Made by Ronan Boiteau
-## Login   <boitea_r@epitech.net>
-## 
-## Started on  Mon Apr 18 17:32:47 2016 Ronan Boiteau
-## Last update Sun Jun  5 23:28:53 2016 Ronan Boiteau
-##
-
 NAME	 = 42sh
 
 IDIR	 = include/
