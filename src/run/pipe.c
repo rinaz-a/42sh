@@ -37,7 +37,7 @@ static char	**get_sub(t_command *command, int *idx, int dry_run)
 static int	parent(int pid, int pipefd[2], int *tmp, char **next)
 {
   int		status;
-  int		ret_child;
+  int		ret_child = 0;
 
   waitpid(pid, &status, WUNTRACED);
   if (!next || !next[0])

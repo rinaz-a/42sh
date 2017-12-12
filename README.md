@@ -34,4 +34,11 @@ Navigate to the root of the repository from your Terminal and run `make` to buil
    - `unsetenv`
  - Prompt based on last exit status
  - Support for non-interactive mode
- 
+
+## Authors
+
+* **Antoine Galpin** ([GitHub](https://github.com/Linezek/))
+* **Raphaël Badia** ([GitHub](https://github.com/RaphaelBadia))
+* **Oscar Stefanini** ([GitHub](https://github.com/Ostefanini/))
+* **Ronan Boiteau** ([GitHub](https://github.com/ronanboiteau) / [LinkedIn](https://www.linkedin.com/in/ronanboiteau/))
+* **Sélim Rinaz** ([GitHub](https://github.com/rinaz-a))

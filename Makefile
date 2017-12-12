@@ -22,31 +22,40 @@ CFLAGS	+= -Wall -Wextra -ansi
 CFLAGS	+= -Wpedantic -Wno-long-long
 CFLAGS	+= -Werror
 
-SDIR	 = src/
-SRCS	 = $(SDIR)builtin/builtins.c			\
-	   $(SDIR)builtin/cd.c				\
-	   $(SDIR)builtin/echo.c			\
-	   $(SDIR)builtin/env.c				\
-	   $(SDIR)builtin/exit.c			\
-	   $(SDIR)builtin/fct_ptr.c			\
-	   $(SDIR)builtin/printenv.c			\
-	   $(SDIR)builtin/pwd.c				\
-	   $(SDIR)builtin/setenv.c			\
-	   $(SDIR)builtin/unsetenv.c			\
-	   $(SDIR)count_args.c				\
-	   $(SDIR)exec_path.c				\
-	   $(SDIR)get_path.c				\
-	   $(SDIR)input.c				\
-	   $(SDIR)logic.c				\
-	   $(SDIR)main.c				\
-	   $(SDIR)parser.c				\
-	   $(SDIR)run/pipe.c				\
-	   $(SDIR)run/redirections.c			\
-	   $(SDIR)run/run.c				\
-	   $(SDIR)run/search_path.c			\
-	   $(SDIR)run/subcommand.c			\
-	   $(SDIR)signal/child.c			\
-	   $(SDIR)signal/parent.c
+BUILTINS_DIR	 = builtin/
+BUILTINS_FILES	 = builtins.c		\
+		   cd.c			\
+		   echo.c		\
+		   env.c		\
+		   exit.c		\
+		   fct_ptr.c		\
+		   printenv.c		\
+		   pwd.c		\
+		   setenv.c		\
+		   unsetenv.c
+BUILTINS	 = $(addprefix $(BUILTINS_DIR), $(BUILTINS_FILES))
+
+RUN_DIR		 = run/
+RUN_FILES	 = pipe.c				\
+		   redirections.c			\
+		   run.c				\
+		   search_path.c			\
+		   subcommand.c
+RUN		 = $(addprefix $(RUN_DIR), $(RUN_FILES))
+
+SRCS_DIR 	 = src/
+SRCS_FILES	 = count_args.c				\
+		   exec_path.c				\
+		   get_path.c				\
+		   input.c				\
+		   logic.c				\
+		   main.c				\
+		   parser.c				\
+		   signal/child.c			\
+		   signal/parent.c			\
+		   $(RUN)				\
+		   $(BUILTINS)
+SRCS	 	 = $(addprefix $(SRCS_DIR), $(SRCS_FILES))
 
 OBJS	 = $(SRCS:.c=.o)
 
