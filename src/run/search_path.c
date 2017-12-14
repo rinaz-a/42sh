@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -14,7 +15,7 @@ static int	parent_exec(pid_t pid, int *status)
   t_signal_ptr	**sig_handler;
   int		stop;
 
-  stop = FALSE;
+  stop = false;
   signal_handler(SETSIG, SIGINT_IGNORE);
   waitpid(pid, status, WUNTRACED);
   if (WIFSIGNALED(*status))
@@ -28,7 +29,7 @@ static int	parent_exec(pid_t pid, int *status)
 	my_dprintf(STDERR, sig_handler[WTERMSIG(*status)]->err);
       if (WTERMSIG(*status) == SIGINT)
 	{
-	  stop = TRUE;
+	  stop = true;
 	  my_printf("\n");
 	}
       free_sig_handler(sig_handler);
@@ -57,8 +58,8 @@ t_uchar		search_path_and_run(char **env,
       if ((execve(exec_path, to_exec, env) == -1))
 	my_exit(EXIT_FAILURE, "%s: Cannot run this file.\n", exec_path);
     }
-  else if (parent_exec(pid, &status) == TRUE)
-    command->stop = TRUE;
+  else if (parent_exec(pid, &status) == true)
+    command->stop = true;
   signal_handler(SETSIG, SIGINT_REGULAR);
   free(exec_path);
   return (WEXITSTATUS(status));

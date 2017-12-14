@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include "my.h"
 #include "mysh_builtins.h"
@@ -25,7 +26,7 @@ int		main(int argc, char **argv, char **environ)
   if (!(builtins = malloc(sizeof(t_builtin_ptr *) * (BUILTINS_NBR + 1)))
       || init_builtins(builtins) == 1)
     return (EXIT_FAILURE);
-  while (TRUE)
+  while (true)
     {
       command.last_ret = ret;
       signal_handler(SETSIG, SIGINT_REGULAR);

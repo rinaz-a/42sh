@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -40,9 +41,9 @@ t_uchar		subcommand(t_builtin_ptr **builtins,
 
   path = get_path(*env);
   cmd.ret = call_builtins(builtins, &cmd.builtin_found, env, to_exec);
-  if (cmd.builtin_found == FALSE && my_cmp(to_exec[0], "exit"))
+  if (cmd.builtin_found == false && my_cmp(to_exec[0], "exit"))
     {
-      cmd.builtin_found = TRUE;
+      cmd.builtin_found = true;
       cmd.ret = run_exit(*env, path, command, builtins);
     }
   if ((cmd.pid = fork()) == (pid_t)-1)
@@ -53,7 +54,7 @@ t_uchar		subcommand(t_builtin_ptr **builtins,
 	  || redirect_input_double(&to_exec, to_exec, cmd.ret) == -1
 	  || redirect_output(&to_exec, to_exec, 0, 0) == -1)
 	exit(1);
-      if (cmd.builtin_found == FALSE)
+      if (cmd.builtin_found == false)
 	cmd.ret = search_path_and_run(*env, path, command, to_exec);
       flush_and_exit(cmd.fd, cmd.ret);
     }

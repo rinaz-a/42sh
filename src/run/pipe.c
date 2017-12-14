@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/wait.h>
@@ -55,7 +56,7 @@ static int	child_exec(t_command *command, int idx, int pid)
 {
   int		status;
 
-  if (!get_sub(command, &idx, TRUE) || !get_sub(command, &idx, TRUE)[0])
+  if (!get_sub(command, &idx, true) || !get_sub(command, &idx, true)[0])
     {
       waitpid(pid, &status, WUNTRACED);
       return (WEXITSTATUS(status));
@@ -75,8 +76,8 @@ static void	spawn_child(t_pipe *pipecf, int *idx)
       if (pipecf->fd != -1 && (dup2(pipecf->fd, STDIN) == -1 ||
 			       close(pipecf->pipefd[0])))
 	my_exit(EXIT_FAILURE, "ERROR: Can't get pipe output.\n");
-      if (!get_sub(pipecf->command, idx, TRUE) ||
-	  !get_sub(pipecf->command, idx, TRUE)[0])
+      if (!get_sub(pipecf->command, idx, true) ||
+	  !get_sub(pipecf->command, idx, true)[0])
 	pipecf->ret = subcommand(pipecf->builtins, pipecf->env,
 				 pipecf->command, (pipecf->command)->pipe_sub);
       else if (dup2(pipecf->pipefd[1], STDOUT) == -1)
@@ -100,7 +101,7 @@ t_uchar		run_pipe_command(t_pipe *pipecf)
   pipecf->fd = -1;
   pipecf->ret = 1;
   idx = 0;
-  while (((pipecf->command->pipe_sub = get_sub(pipecf->command, &idx, FALSE)))
+  while (((pipecf->command->pipe_sub = get_sub(pipecf->command, &idx, false)))
 	 && pipecf->command->pipe_sub[0])
     {
       if (pipe(pipecf->pipefd) == -1 || (pipecf->pid = fork()) == (pid_t)-1)
@@ -109,7 +110,7 @@ t_uchar		run_pipe_command(t_pipe *pipecf)
 	spawn_child(pipecf, &idx);
       else
 	pipecf->ret = parent(pipecf->pid, pipecf->pipefd, &pipecf->fd,
-			     get_sub(pipecf->command, &idx, TRUE));
+			     get_sub(pipecf->command, &idx, true));
     }
   return (pipecf->ret);
 }

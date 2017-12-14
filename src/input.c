@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -40,16 +41,16 @@ char		*get_input_raw(t_command *command, t_uchar ret, char **env)
 {
   char		*input_raw;
 
-  command->stop = FALSE;
+  command->stop = false;
   command->argv = NULL;
   command->pipe_sub = NULL;
   if (isatty(STDIN))
     {
-      command->interactive = TRUE;
+      command->interactive = true;
       put_prompt(env, ret);
     }
   else
-      command->interactive = FALSE;
+      command->interactive = false;
   input_raw = get_next_line(STDIN);
   return (input_raw);
 }
