@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdlib.h>
 #include "my.h"
 
@@ -29,10 +30,10 @@ static t_uint	_is_last(char *str)
   while (str[idx])
     {
       if (str[idx] != ' ' && str[idx] != '\t')
-	return (FALSE);
+	return (false);
       idx += 1;
     }
-  return (TRUE);
+  return (true);
 }
 
 static char	_get_char(const char *str,
@@ -42,7 +43,7 @@ static char	_get_char(const char *str,
 {
   char		new_letter;
 
-  *first = FALSE;
+  *first = false;
   new_letter = str[*idx_str];
   *idx += 1;
   *idx_str += 1;
@@ -56,7 +57,7 @@ static char	*_init_variables(char *str,
 {
   char		*clean_str;
 
-  *first = TRUE;
+  *first = true;
   clean_str = malloc(sizeof(char) * (_get_clean_str_size(str) + 1));
   if (clean_str == NULL)
     my_exit(EXIT_FAILURE, "ERROR: Out of memory! malloc() failed\n");
@@ -79,7 +80,7 @@ char		*my_epur_str(char *str)
     {
       if (str[idx_str] == ' ' || str[idx_str] == '\t')
 	{
-	  if (first == FALSE && _is_last(str + idx_str) == FALSE)
+	  if (first == false && _is_last(str + idx_str) == false)
 	    {
 	      clean_str[idx] = ' ';
 	      idx += 1;

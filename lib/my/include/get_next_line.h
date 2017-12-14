@@ -2,11 +2,8 @@
 # define GET_NEXT_LINE_H_
 
 # ifndef READ_SIZE
-#  define READ_SIZE (65536)
+#  define READ_SIZE (32)
 # endif
-
-# define TRUE	(1)
-# define FALSE	(0)
 
 typedef unsigned int		t_uint;
 

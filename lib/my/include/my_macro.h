@@ -5,11 +5,4 @@
 # define MAX(nbr_1, nbr_2)	(nbr_1 < nbr_2 ? nbr_2 : nbr_1)
 # define MIN(nbr_1, nbr_2)	(nbr_1 > nbr_2 ? nbr_2 : nbr_1)
 
-# define FALSE	(0)
-# define TRUE	(1)
-
-# define STDIN	(0)
-# define STDOUT	(1)
-# define STDERR	(2)
-
 #endif /* !MY_MACRO_H_ */

@@ -26,6 +26,6 @@ int		_char_isletter(const char letter)
       letter == ';' || letter == '[' ||
       letter == ']' || letter == '(' ||
       letter == ')' || letter == 'l')
-    return (TRUE);
-  return (FALSE);
+    return (true);
+  return (false);
 }

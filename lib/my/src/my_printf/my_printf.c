@@ -11,13 +11,13 @@ static t_uint	_if_not_flag(int fd, t_uint printed, t_cstring *str)
     str->idx -= 1;
   printed += my_putchar_fd(fd, '%');
   str->idx += 1;
-  space = FALSE;
+  space = false;
   while (str->str[str->idx] && !_char_isletter(str->str[str->idx]))
     {
-      if (str->str[str->idx] == ' ' && space == FALSE)
+      if (str->str[str->idx] == ' ' && space == false)
 	{
 	  printed += my_putchar_fd(fd, ' ');
-	  space = TRUE;
+	  space = true;
 	}
       str->idx += 1;
     }
